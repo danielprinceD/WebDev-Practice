@@ -98,3 +98,6 @@ function func()
 {
     document.body.innerHTML = "You Clicked the Button";
 }
+
+box = document.getElementById("box")
+text = document.getElementById("txt")
