@@ -73,3 +73,13 @@ console.log(fname.split(''));
 
 console.log(eval("1+4"));
 console.log("1"+1);
+
+const date = new Date()
+date.setFullYear(2023);
+console.log(date.getFullYear());
+
+myarr = [10,20,30,40]
+myarr.unshift("first")
+myarr.push("last")
+myarr.splice(2,0,"inter")
+console.log(...myarr);
