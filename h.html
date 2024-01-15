@@ -80,16 +80,31 @@
             color: aliceblue;
             position: absolute;
         }
-        
-        
+        #btn
+        {
+            height: 40px;
+            width: 80px;
+            background-color: royalblue;
+            color: aliceblue;
+            font-size: 16px;
+            transition: 0.5s;
+            border-radius: 25px;
+            border: none;
+        }
+        #btn:hover{
+            background-color: rgb(49, 72, 143);
+        }
     </style>
 </head>
 <body>
     <h1 id="headerTag">Hi</h1>
+    <button id = 'btn' onclick="func()">
+        Click
+    </button>
     <div class="container">
 
         <div id="bg">
-            <div id="Loader">
+            <div id="Loader"> 
             </div>
             <p id="load">Loading...</p>
         </div>

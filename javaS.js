@@ -83,3 +83,18 @@ myarr.unshift("first")
 myarr.push("last")
 myarr.splice(2,0,"inter")
 console.log(...myarr);
+
+
+console.log(myarr.indexOf(1)); //return -1
+console.log(myarr.includes(10)); //return true
+
+myarr.forEach(element => { 
+    console.log(element)
+});
+document.write("<h2>Hello</h2>")
+document.body.innerHTML = "<h1>Hi  Hello</h1>"
+btn = document.getElementById("btn")
+function func()
+{
+    document.body.innerHTML = "You Clicked the Button";
+}
