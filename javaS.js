@@ -100,4 +100,5 @@ function func()
 }
 
 box = document.getElementById("box")
-text = document.getElementById("txt")
+text = document.getElementById('txt')
+console.log(text);

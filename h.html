@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML</title>
+    <script src="javaS.js"></script>
     <style>
         #Loader
         {
@@ -115,7 +116,6 @@
         </style>
 </head>
 <body>
-    <script src="javaS.js"></script>
     <h1 id="headerTag">Hi</h1>
     <button id = 'btn' onclick="func()">
         Click
@@ -133,12 +133,46 @@
         </div>
         
         
+        
     </div>
     
     <div id="canvas">
         <div id="box">
             <p id="txt">Hello</p>
+            <div id= "list">
+                <ol class="list-ol">
+
+                </ol>
+            </div>
         </div>
     </div>
+        <script>
+
+            txt = document.getElementById("txt")
+            txt.innerHTML = "A"
+            box = document.getElementById('box')
+            
+            myDiv = document.createElement("div")
+            myDiv.idName = "box"
+            myDiv.textContent = "Text Box"
+            box.append(myDiv);
+
+            node = document.createTextNode("MyNode").innerHTML = "Class"
+            box.append(node)
+
+            char = ["Anime","Manga","Live Action"]
+            df = document.createDocumentFragment();
+            for(i of char)
+            {
+                list = document.createElement("li")
+                list.textContent = i;
+                df.appendChild(list)
+            }
+            list_ele = document.getElementsByClassName("list-ol")
+            myDiv.append(df)
+
+            console.log(event.target);
+
+        </script>
 </body>
 </html>
