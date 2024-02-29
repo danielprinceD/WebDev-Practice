@@ -2,6 +2,7 @@ import './header.css'
 import Image from './assets/comp.jpg'
 import { useState } from 'react';
 
+
 function Header() {
   
   return (
