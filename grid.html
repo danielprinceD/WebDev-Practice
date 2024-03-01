@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Box</title>
+</head>
+<body>
+    <h1>Grid-Box Container</h1>
+    <div class="grid-container">
+        <div class="grid-items item-1" style="background-color: blue;"><div class="letter">1</div></div>
+        <div class="grid-items item-2" style="background-color: rgb(0, 255, 221);"><div class="letter">2</div></div>
+        <div class="grid-items item-3"style="background-color: red"><div class="letter">3</div></div>
+        <div class="grid-items item-4"style="background-color: royalblue;"><div class="letter">4</div></div>
+        <div class="grid-items item-5"style="background-color: lightblue;"><div class="letter">5</div></div>
+        <div class="grid-items item-6"style="background-color: lightgreen;"><div class="letter">6</div></div>
+    </div>
+    <h1>Grid-Box Items Properties</h1>
+    <div class="main-grid" >
+        <div class="grid-it it-1" style="background-color: lightyellow;">
+            Header
+        </div>
+        <div class="middle">
+
+            <div class="grid-it it-2" style="background-color: rgb(50, 187, 91);">
+                Left Side
+            </div>
+            <div class="grid-it it-3" style="background-color: rgb(144, 216, 226);">
+                Main
+            </div>
+            <div class="grid-it it-4" style="background-color: rgb(219, 176, 230);">
+                Right Side
+            </div>
+        </div>
+        <div class="grid-it it-5" style="background-color: rgb(224, 162, 160);">
+            Footer
+        </div>
+
+    </div>
+</body>
+<style>
+
+    .main-grid
+    {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 25px;
+        gap: 10px;
+        display: grid;
+        border: 1px solid;
+        padding: 20px;
+    }
+    .middle
+    {
+        gap:5px;
+        display: grid;height: 700px;
+        grid-template-columns: repeat(3 , 1fr);
+    }
+    
+    .grid-it
+    {
+        padding: 50px;
+        text-align: center;
+    }
+    .grid-container
+    {
+        background-color: rgb(222, 238, 231);
+        display: inline-grid;
+        padding: 20px;
+        border-radius: 20px;
+        border: 2px solid; 
+        gap: 20px;
+        place-content: center;
+        height: 700px;
+        grid-template:repeat(3,200px) / repeat(2,200px); 
+        
+    }
+    .grid-items
+    {
+        text-align: center;
+        padding: 100px;
+        place-self: center;
+        filter: brightness(55%);
+        border-radius: 50%;
+        transition: 2s;
+    }
+    .grid-items:hover
+    {
+        filter: brightness(100%);
+    }
+    .item-1{border-bottom-left-radius: 0;
+    border-top-right-radius: 0;}
+    .item-2{border-bottom-right-radius: 0;
+    border-top-left-radius: 0;}
+    
+    .item-5{border-top-left-radius: 0;
+    border-bottom-right-radius: 0;}
+    .item-6{border-top-right-radius: 0;
+    border-bottom-left-radius: 0;}
+
+
+</style>
+</html>
