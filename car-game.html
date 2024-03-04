@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bike</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="bike">
+        <img src="output-onlinegiftools.gif" alt="" />
+      </div>
+      <div class="light">
+        <img src="light-removebg-preview.png" alt="" />
+      </div>
+    </div>
+  </body>
+  <style>
+    .container {
+      background-image: url(moon.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 700px;
+      height: 500px;
+      display: flex;
+      overflow: hidden;
+    }
+    .bike img {
+      height: 200px;
+      z-index: 1;
+      position: absolute;
+      transform: translate(150px, 300px);
+    }
+    .light img {
+      filter: brightness(550%);
+      height: 300px;
+      transform: translate(700px, 205px);
+      animation: moving 1s infinite linear;
+    }
+    @keyframes moving {
+      from {
+        transform: translate(900px, 205px);
+      }
+      to {
+        transform: translate(-100px, 205px);
+      }
+    }
+  </style>
+</html>

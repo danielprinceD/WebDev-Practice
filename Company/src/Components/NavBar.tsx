@@ -2,7 +2,7 @@ import "bootstrap/dist/css/bootstrap.css";
 
 var NavBar = () => {
   return (
-    <div className="navigation-container">
+    <div className="navigation-container d-flex">
       <div className="navbar navbar-dark bg-danger">
         <ul className="navbar-nav dark d-flex flex-row gap-5 justify-content-center">
           <li className="nav-item active px-5 ">
